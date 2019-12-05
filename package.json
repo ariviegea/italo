@@ -10,11 +10,16 @@
     "react-scripts": "3.2.0",
     "sass": "^1.23.7"
   },
+  "proxy": "http://localhost:5000",
   "scripts": {
-    "start": "react-scripts start",
+    "start-client": "react-scripts start",
+    "lint": ". eslint",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-server": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently \"npm run server\" \"npm run start-client\""
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,6 +40,7 @@
     "concurrently": "^5.0.0",
     "eslint": "^6.7.2",
     "eslint-plugin-react": "^7.17.0",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "nodemon": "^2.0.1"
   }
 }
