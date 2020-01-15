@@ -27,6 +27,11 @@ app.get('/api/apartments', (req, res) => {
     res.status(200).json(apartments);
 });
 
+// POST adminUser 
+app.post('/admin', async(res, req) => {
+
+});
+
 module.exports = {
     app,
 };

@@ -1,6 +1,7 @@
+const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 
-const AdminSchema = new mongoose.Schema({
+const userAdminSchema = new mongoose.Schema({
     email: {
         type: String,
         required: true,
@@ -12,3 +13,7 @@ const AdminSchema = new mongoose.Schema({
         required: true,
     }
 })
+
+const usersAdmin = mongoose.model('UserAdmin', userAdminSchema);
+
+module.exports = userAdmin;
