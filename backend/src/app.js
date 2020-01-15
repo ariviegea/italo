@@ -1,6 +1,9 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+const mongoClient = require('./mongodb/connect');
+
+mongoClient.setupDb();
 
 const apartments = [
     {
@@ -23,7 +26,6 @@ app.use(bodyParser.json());
 app.get('/api/apartments', (req, res) => {
     res.status(200).json(apartments);
 });
-
 
 module.exports = {
     app,

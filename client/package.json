@@ -12,7 +12,7 @@
   },
   "proxy": "http://localhost:5000",
   "scripts": {
-    "start-client": "react-scripts start",
+    "start": "react-scripts start",
     "lint": ". eslint",
     "build": "react-scripts build",
     "test": "react-scripts test",
