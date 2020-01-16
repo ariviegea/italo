@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
 const mongoClient = require('./mongodb/connect');
+// const userAdmin = require('./mongodb/schema');
 
 mongoClient.setupDb();
 
@@ -29,7 +30,7 @@ app.get('/api/apartments', (req, res) => {
 
 // POST adminUser 
 app.post('/admin', async(res, req) => {
-
+ const { email, password } = req.body;
 });
 
 module.exports = {

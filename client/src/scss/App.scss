@@ -1,0 +1,12 @@
+@import './Settings.scss';
+
+@import '../components/Navigation/navigation.scss';
+
+* {
+    margin:0;
+    padding:0;
+  }
+
+.App{
+    background-color: red;
+}
