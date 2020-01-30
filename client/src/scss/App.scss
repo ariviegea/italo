@@ -1,6 +1,7 @@
 @import './Settings.scss';
 
 @import '../components/Navigation/navigation.scss';
+@import '../components/Admin/admin.scss';
 
 * {
     margin:0;
@@ -8,5 +9,5 @@
   }
 
 .App{
-    background-color: red;
+    
 }

@@ -1,0 +1,38 @@
+.admin {
+    margin-top: 20px;
+   
+    h1 {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    }
+
+    &__access{
+    
+    display: flex;
+    justify-content: center;
+
+        ul{
+        list-style: none;
+        padding: 0;
+        }
+
+        input {
+        border-radius: 5px;
+        padding: 2px; 
+        margin: 5px;
+        }
+
+        button {
+            border: 2 solid grey;
+            background-color: blueviolet;
+            color:white;
+            width:114px;
+            height:21px;
+            padding:2px;
+            margin:5px;
+            border-radius: 5px;
+            font-size:13px;
+        }
+    }
+}
