@@ -4,7 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import Apartments from './components/Apartments/Apartments';
 import Navigation from './components/Navigation/Navigation';
 import Home from './components/Home/Home';
-import Admin from './components/Admin/Admin';
+import Login from './components/Login/Login';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Switch>
         <Route path='/' exact component={Home}/>
         <Route path='/apartments' component={Apartments}/>
-        <Route path='/admin' component={Admin}/> 
+        <Route path='/admin' component={Login}/> 
       </Switch>
     </div>
   );
