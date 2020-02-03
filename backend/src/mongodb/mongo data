@@ -1,0 +1,23 @@
+// const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+// const mongoClient = require('./mongodb/connect');
+// const adminLoginModel = require('./mongodb/adminSchema');
+
+// //conection with the database
+// //mongoClient.setupDb();
+
+// // Body parser middleware
+// app.use(bodyParser.urlencoded({ extended: true }));
+// app.use(bodyParser.json());
+
+// // Schema creation of the admin
+// const Schema = mongoose.Schema;
+
+// const adminSchema = new Schema({
+//     name: { type: String, require: true},
+//     password: { type: String, required: true}
+// })
+
+// const Admin = mongoose.model('Admin', adminSchema);
+
+
